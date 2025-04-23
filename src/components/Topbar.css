@@ -1,0 +1,51 @@
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000000;
+  color: white;
+  padding: 16px 20px;
+  border-radius: 8px;
+  margin-top: 1px;
+  margin-bottom: 15px;
+}
+
+/* Title container: Logo + Text */
+.topbar-title {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Spinning Studio Logo */
+.studio-logo {
+  height: 32px;
+  width: auto;
+  animation: spin 4s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Right-side Buttons */
+.topbar-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.topbar-btn {
+  background-color: #ff5912;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 115px;
+  cursor: pointer;
+}
+
+.topbar-btn:hover {
+  background-color: #000;
+}

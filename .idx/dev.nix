@@ -9,6 +9,7 @@
     pkgs.nodejs_20
     pkgs.imagemagickBig
     pkgs.mailutils
+    pkgs.sudo
   ];
   # Sets environment variables in the workspace
   env = {};

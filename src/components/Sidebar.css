@@ -1,0 +1,200 @@
+.sidebar {
+  margin-left: 12.5px;
+  width: 260px;
+  height: 94%;
+  background-color: #f9f9f9;
+  padding: 24px 20px;
+  display: flex;
+  border-radius: 16px;
+  flex-direction: column;
+  justify-content: space-between;
+  border-right: 1px solid #eee;
+  font-family: 'Inter', sans-serif;
+  box-shadow: 4px 0 20px rgba(0, 0, 0, 0.04);
+  overflow: hidden;
+}
+
+/* Header */
+.sidebar-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 50px;
+  position: relative;
+}
+
+.grid-icon {
+  width: 34px;
+  height: 34px;
+  margin-top: -70px;
+  position: absolute;
+  right: 0;
+  background: none;
+  border: 0px solid #888;
+  cursor: pointer;
+  padding: 4px;
+  padding-top: 6px;
+  color: #888;
+}
+
+/* Search Box */
+.search-box {
+  display: flex;
+  align-items: center;
+  background: #f0f0f0;
+  border-radius: 12px;
+  padding: 10px 12px;
+  margin-bottom: 16px;
+}
+
+.search-box input {
+  border: none;
+  outline: none;
+  background: transparent;
+  flex: 1;
+  font-size: 14px;
+}
+
+.shortcut {
+  font-size: 12px;
+  color: #aaa;
+  background: #e5e5e5;
+  padding: 4px 8px;
+  border-radius: 8px;
+}
+
+/* Scrollable Menu */
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex-grow: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+/* Menu Item Styles */
+.menu-item {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  padding: 12px 10px;
+  border-radius: 12px;
+  color: #222;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  position: relative;
+}
+
+.menu-item:hover {
+  background-color: #efefef;
+}
+
+.menu-item.active {
+  background-color: #e5f0ff;
+  color: #007aff;
+  font-weight: 600;
+}
+
+.menu-item .icon {
+  width: 18px;
+  height: 18px;
+  margin-right: 12px;
+  background-color: #ccc;
+  border-radius: 4px;
+}
+
+.menu-item .icon.blue {
+  background-color: #007aff;
+}
+
+.menu-item .plus {
+  margin-left: auto;
+  font-weight: bold;
+  color: #aaa;
+}
+
+.menu-divider {
+  margin-top: 24px;
+  margin-bottom: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #777;
+  padding-left: 10px;
+}
+
+.tag-new {
+  font-size: 11px;
+  color: white;
+  background: linear-gradient(90deg, #6f6ef4, #aa8dfc);
+  padding: 3px 8px;
+  border-radius: 999px;
+  margin-left: auto;
+}
+
+/* Bottom Section (Pinned) */
+.bottom-section {
+  padding-top: 20px;
+  flex-shrink: 0;
+}
+
+/* Light/Dark Mode Toggle */
+.mode-toggle {
+  display: flex;
+  justify-content: space-between;
+  background: #e8e8e8;
+  padding: 6px;
+  border-radius: 999px;
+  margin-bottom: 20px;
+}
+
+.mode-toggle button {
+  flex: 1;
+  border: none;
+  background: transparent;
+  padding: 8px 0;
+  border-radius: 999px;
+  font-weight: 500;
+  color: #555;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.mode-toggle button.active {
+  background: white;
+  color: #111;
+  font-weight: 600;
+}
+
+/* User Profile */
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #f0f0f0;
+  border-radius: 12px;
+  padding: 10px 12px;
+}
+
+.avatar {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+}
+
+.user-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-details .name {
+  font-size: 14px;
+  font-weight: 600;
+  color: #111;
+}
+
+.user-details .email {
+  font-size: 12px;
+  color: #888;
+}
