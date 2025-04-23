@@ -1,5 +1,8 @@
 {
   "projects": {
-    "default": "adverse-6a560"
-  }
+    "default": "adverse-6a560",
+    "production": "uxd-agent"
+  },
+  "targets": {},
+  "etags": {}
 }
