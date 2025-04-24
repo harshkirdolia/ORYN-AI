@@ -10,14 +10,14 @@
         "*.local"
       ],
       "predeploy": [
-        "npm --prefix \"$RESOURCE_DIR\" run lint"
+        "npm --prefix "$RESOURCE_DIR" run lint"
       ],
-      "runtime": "nodejs18",
+      "runtime": "nodejs20",
       "codebase": "default"
     }
   ],
   "hosting": {
-    "source": "hosting",
+    "source": "dist",
     "ignore": [
       "firebase.json",
       "**/.*",
