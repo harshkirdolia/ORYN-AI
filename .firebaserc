@@ -1,7 +1,9 @@
 {
   "projects": {
     "default": "adverse-6a560",
-    "production": "uxd-agent"
+    "production": "uxd-agent",
+    "staging": "adverse-6a560",
+    "rambo": "adverse-6a560"
   },
   "targets": {},
   "etags": {}

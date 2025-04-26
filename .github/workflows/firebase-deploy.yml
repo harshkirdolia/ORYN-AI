@@ -1,4 +1,4 @@
-name: Deploy to Firebase Hosting
+name: Deploy to Firebase Hosting on main branch push
 
 on:
   push:
@@ -9,24 +9,26 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout Repository
+      - name: Checkout code
         uses: actions/checkout@v4
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: 'latest'
 
-      - name: Install Dependencies
-        run: npm install
+      - name: Install Firebase CLI
+        run: npm install -g firebase-tools
 
-      - name: Build Project
-        run: npm run build
+      - name: Verify firebase.json exists
+        uses: andstor/file-existence-action@v3
+        with:
+          file: 'firebase.json'
 
-      - name: Deploy to Firebase
+      - name: Deploy to Firebase Hosting
         uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
-          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT }}'
+          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUN }}'
           channelId: live
           projectId: ai-agent-9f171
